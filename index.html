@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>redirector v1.0 - a link shortener alternative</title>
+    <meta name="description" content="A alternative methord for link shortener bypasses">
+    <meta name=”robots” content="index, follow">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/js/index.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" sizes="16x16" href="/favicon/16x16.png">
+    <link rel="icon" sizes="32x32" href="/favicon/32x32.png">
+    <link rel="icon" sizes="192x192" href="/favicon/192x192.png">
+    <link rel="icon" sizes="512x512" href="/favicon/512x512.png">
+    <link rel="icon" href="/favicon/favivon.ico">
+    
+  </head>
+  <body>
+    <div id="centre">
+      <h1 id="text">The Redirector v1.0</h1>
+    </div>
+    <div id="centre">
+      <h2 id="text">Solver for websites you want to visit!</h2>
+    </div>
+    <div id="centre">
+      <!-- <label for="link">link: </label> -->
+      <input type="text" id="link" name="link" size="100" placeholder="url to redirect">
+    </div>
+  <br>
+    <div id="centre">
+      <button id="button" onclick="NewTab()">Open Tab</button>
+    </div>
+<script>
+  var input = document.getElementById("link");
+
+  input.addEventListener("keypress", function(event) {
+
+  if (event.key === "Enter") {
+
+    event.preventDefault();
+    document.getElementById("button").click();
+  }
+});
+</script>
+  <div id="centre">
+    <p id="text">
+      <b>ATTENTION</b>
+    </p>
+  </div>
+  <div id="centre">
+    <p id="text">
+        This website will not receive any other improvements, unless it is for bug fixes.<br>
+    </p>
+  </div>
+    <div id="centre">
+      <p id="text">
+      Email me at <b>yqwbe25@gmail.com</b> to report exploit I can make and bugs.
+      </p>
+    </div>
+  <div id="centre">
+    <p id="text">
+  Have fun!
+    </p>
+  </div>
+  <div id="centre">
+    <p id="text">
+      This website takes advatages of some device management profiles that does not take into account of certain redirect code, such as code 302.<br>
+      The website might be able to "redirect" you to websites previously not allowed by the management, but sometimes they might not work.<br>
+      The free tool works like link shorteners without the shortening part, as we cannot store any information permanently.To create a permalink, use this format: <a href="/redirect.php?url=www.google.com" class="text">https://bypass--redirect-project.repl.co/redirect.php?url=www.google.com</a> and replace google.com with the link you want to go to.
+    </p>
+  </div>
+    <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+  </body>
+</html>

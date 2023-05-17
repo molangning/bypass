@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://redirect.mical385.repl.co/sitemap.xml

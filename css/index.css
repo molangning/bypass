@@ -1,0 +1,29 @@
+body {
+  background-color: #6A5ACD;
+}
+
+#centre{
+  text-align:center;
+}
+
+#button {
+  background-color:#102457;
+  border: none;
+  color: #d4dde4;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+#text {
+  color: #d4dde4;
+}
+
+#link {
+  color: #d4dde4;
+  background: #4C5454 ;
