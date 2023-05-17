@@ -10,7 +10,7 @@ function NewTab() {
   //alert(link);
         //console.log(link);
   if (link.length>0) {
-    window.open("/redirect.php?url="+encodeURIComponent(link), "_blank");  
+    window.open("/stage-1.php?url="+encodeURIComponent(link), "_blank");  
         
       }
 }

@@ -2,11 +2,11 @@ body {
   background-color: #6A5ACD;
 }
 
-#centre{
+#custom_centre{
   text-align:center;
 }
 
-#button {
+#custom_button {
   background-color:#102457;
   border: none;
   color: #d4dde4;
@@ -20,10 +20,10 @@ body {
   border-radius: 12px;
 }
 
-#text {
+#custom_text {
   color: #d4dde4;
 }
 
-#link {
+#custom_link {
   color: #d4dde4;
   background: #4C5454 ;
