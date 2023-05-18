@@ -1,4 +1,4 @@
-function NewTab() {
+function newTab() {
   //alert(1);
   const re = new RegExp('[-a-zA-Z0-9:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}([-a-zA-Z0-9()!@:%_\+.~#?&\/\/=]*)');
   var link = document.getElementById('link').value;
@@ -9,13 +9,14 @@ function NewTab() {
   }
   //alert(link);
         //console.log(link);
-  if (link.length>0) {
-    window.open("/stage-1.php?url="+encodeURIComponent(link), "_blank");  
-        
-      }
+  openUrl(link)
+  
 }
 
-function logKey(e) {
-  alert(type(e.key));
-} 
+function openUrl(link){
+  
+  if (link.length>0) {
+    window.open("/stage-1.php?url="+encodeURIComponent(link), "_blank");  
+  }
+}
 

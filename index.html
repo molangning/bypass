@@ -26,7 +26,7 @@
     </div>
 
     <div class="pt-4 d-flex justify-content-center">
-<button type="button" class="btn btn-light" onclick="NewTab()">Open Tab</button>
+<button id="button" type="button" class="btn btn-light" onclick="newTab()">Open Tab</button>
     </div>
 <script>
   var input = document.getElementById("link");
@@ -36,7 +36,7 @@
   if (event.key === "Enter") {
 
     event.preventDefault();
-    document.getElementById("custom_button").click();
+    document.getElementById("button").click();
   }
 });
 </script>
@@ -48,12 +48,26 @@
   <div class="text-bg-dark text-center">
     <p>
         This website will not receive any other improvements, unless it is for bug fixes.<br>
-      Please open an issue at the <a href="https://github.com/molangning/bypass" class="text" target="_blank">github</a> repository to report bugs or submit suggestions.
+      Please open an issue at the <a href="https://github.com/molangning/bypass" class="text" target="_blank">github</a> repository to report bugs or submit suggestions.<br>
+      Remember to star the GitHub repository if you found it helpful!
     </p>
   </div>
-  <div class="text-bg-dark p-3 text-center">
+  <div class="text-bg-dark text-center">
     <p>
-      Remeber to star the GitHub repository if you found it helpful!
+      Quick links:
     </p>
-    </body>
+  </div>
+  <!-- https://mdbootstrap.com/docs/standard/components/list-group/#
+    -->
+  <div class="list-group list-group-light w-25 m-auto p-10">
+  <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center" onclick="openUrl('https://discord.com/app/')">
+    <img src="/images/discord-ico.png" style="width: auto; height: 20px; margin: 3px 10px 0px 0px;">
+    Discord
+  </button>
+  <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center" onclick="openUrl('https://web.whatsapp.com')">
+  <img src="/images/whatsapp-ico.png" style="width: auto; height: 30px; margin: 0px 5px 5px 0px">
+    Whatsapp
+  </button>
+</div>
+  </body>
 </html>
