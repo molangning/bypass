@@ -9,9 +9,11 @@ THIS WILL ONLY WORK IF THE IPAD SHOWS RESTRICTED ERROR MESSAGE ON THE WEBSITE YO
 Examples of the bypass in work
 
 Blocked error page
+
 <img src="images/blocked.png" alt="image of a blocked page">
 
 Bypassed page
+
 <img src="images/unblocked.png" alt="image of reddit being unblocked">
 
 ## Tested devices
