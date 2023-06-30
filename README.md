@@ -4,7 +4,7 @@ A simple redirector hack that should work on Singapore school Ipads that have Mo
 
 This is essentially a mobile guardian bypass for school ipads.
 
-THIS WILL ONLY WORK IF THE IPAD SHOWS RESTRICTED SITE ON THE WEBSITE YOU ARE TRYING TO VISIT.
+THIS WILL ONLY WORK IF THE IPAD SHOWS RESTRICTED ERROR MESSAGE ON THE WEBSITE YOU ARE TRYING TO VISIT.
 
 ## How do I use it?
 
