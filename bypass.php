@@ -45,6 +45,9 @@ yy990,</script>
     </p>
   </div>
   <div class="text-bg-dark text-center">
+    <p> 
+      Bookmark this link and the github link to check for updates. <br>SITE MAY GET BLACKLISTED SO CHECK GITHUB FOR UPDATES<br>
+    </p>
     <p>
       Please open an issue at the <a href="https://github.com/molangning/bypass" class="text" target="_blank">github</a> repository to report bugs or submit suggestions.<br>
       Remember to star the GitHub repository if you found it helpful!

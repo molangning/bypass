@@ -1,5 +1,6 @@
 { pkgs }: {
 	deps = [
-		pkgs.php82
+		pkgs.nginx
+  pkgs.php82
 	];
 }
