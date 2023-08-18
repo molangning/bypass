@@ -2,7 +2,7 @@
 
 ## STATUS
 
-Down due to maintance, should be fixed within a few hours
+Down due to maintenance, should be fixed within a few hours
 
 ## About this project
 
