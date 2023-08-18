@@ -28,7 +28,7 @@ iPad OS 16.2.1 with mobile guardian installed on Safari
 
 ## How do I use it?
 
-Simply open this url in your web browser: [https://bypass--redirect-project.repl.co](https://bypass--redirect-project.repl.co)
+Simply open one of the urls in the mirrors section
 
 Bookmark this url (github and the newest mirrors) so you won't miss out on anything!
 
