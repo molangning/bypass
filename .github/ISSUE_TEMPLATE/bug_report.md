@@ -3,7 +3,7 @@ name: Bug report
 about: Create a report to help us improve
 title: ''
 labels: ''
-assignees: ''
+assignees: molangning
 
 ---
 
@@ -35,4 +35,4 @@ If applicable, add screenshots to help explain your problem.
  - Version [e.g. 22]
 
 **Additional context**
-Add any other context about the problem here.
+- Details about which school you are from if website is restricted
