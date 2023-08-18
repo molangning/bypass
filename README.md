@@ -26,6 +26,10 @@ Simply open this url in your web browser: [https://bypass--redirect-project.repl
 
 For self hosting, please fork this repository and import it into replit with the forked repository.
 
+## Bypass is restricted
+
+Please open a issue with a screenshot of the resticted page and the name of your school.
+
 ## I have found problems in the code/website or I want to suggest something.
 
 If you have found bugs in the code, please feel free to open a issue in the github repo.
