@@ -47,4 +47,4 @@ If you have found bugs in the code, please feel free to open a issue in the gith
 For suggestions, make sure you tag them as suggestions in github issues
 
 ## TODO
-- [ ] Hidden links to prevent automatic detection
+- [x] Hidden links to prevent automatic detection
