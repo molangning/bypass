@@ -2,7 +2,10 @@
 
 ## STATUS
 
-Down due to maintenance, should be fixed within a few hours
+Site is now back online! Please open an issue if all mirrors does not work
+
+## Mirrors
+[Link 1](https://squigglysilentkey.testaccount413.repl.co/bypass)
 
 ## About this project
 
