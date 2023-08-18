@@ -1,5 +1,11 @@
 # Bypass project
 
+## STATUS
+
+Down due to maintance, should be fixed within a few hours
+
+## About this project
+
 A simple redirector hack that should work on Singapore school Ipads that have Mobile Guardian installed.
 
 This is essentially a mobile guardian bypass for school ipads.
