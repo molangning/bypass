@@ -25,7 +25,11 @@ iPad OS 16.2.1 with mobile guardian installed on Safari
 Simply open this url in your web browser: [https://bypass--redirect-project.repl.co](https://bypass--redirect-project.repl.co)
 
 For self hosting, please fork this repository and import it into replit with the forked repository.
+
 ## I have found problems in the code/website or I want to suggest something.
 
 If you have found bugs in the code, please feel free to open a issue in the github repo.
 For suggestions, make sure you tag them as suggestions in github issues
+
+## TODO
+- [] Hidden links to prevent automatic detection
