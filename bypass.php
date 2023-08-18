@@ -38,8 +38,7 @@
     event.preventDefault();
     document.getElementById("button").click();
   }
-});
-</script>
+yy990,</script>
   <div class="text-bg-dark pt-4 text-center">
     <p id="">
       <b>ATTENTION</b>
