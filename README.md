@@ -1,5 +1,5 @@
 # Bypass project
-
+ 
 ## STATUS
 
 Site is now back online! Please open an issue if all mirrors does not work
@@ -39,7 +39,7 @@ For self hosting, please fork this repository, import it into replit with the fo
 
 ## Bypass is restricted
 
-Please open a issue with a screenshot of the resticted page and the name of your school.
+Please open a issue with a screenshot of the resticted page and the name of your school, as the block may just be for your school or countrywide.
 
 ## I have found problems in the code/website or I want to suggest something.
 
