@@ -65,6 +65,10 @@ yy990,</script>
     <img src="/images/discord-ico.png" style="width: auto; height: 20px; margin: 3px 10px 0px 0px;">
     Discord
   </button>
+  <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center list-group-item" onclick="openUrl('https://www.instagram.com')">
+    <img src="/images/instagram.png" style="width: auto; height: 25px; margin: 3px 3px 0px 0px;">
+    Instagram
+  </button>
   <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center list-group-item" onclick="openUrl('https://web.whatsapp.com')">
   <img src="/images/whatsapp-ico.png" style="width: auto; height: 30px; margin: 0px 5px 5px 0px">
     Whatsapp
