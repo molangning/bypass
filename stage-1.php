@@ -1,10 +1,16 @@
 <?php
   if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    $loc=htmlspecialchars($_GET["url"]);
-    if (strlen($loc)>0){
-      header("Cache-Control: no-cache, must-revalidate");
-      header('Location: ' . $loc , true, 301);
-      die();
+    if (isset($_GET["url"])) {
+      $loc=htmlspecialchars($_GET["url"]);
+      if (strlen($loc)>0) {
+        header("Cache-Control: no-cache, must-revalidate");
+        header('Location: '.$loc,true,301);
+        
+        $log="Timestamp: ".date("e h:i:s A").PHP_EOL."IP address: ".getallheaders()["X-Forwarded-For"].PHP_EOL."Requested link: ".$loc.PHP_EOL."-------------------------------------------".PHP_EOL;
+file_put_contents('./logs/log_'.date("d-m-o").'.log', $log, FILE_APPEND);
+        die();
+        
+      }
     }
   }
 ?>
@@ -22,9 +28,9 @@
     <link rel="icon" sizes="512x512" href="/favicon/512x512.png">
     <link rel="icon" href="/favicon/favivon.ico">
     <title>redirecting</title>
-    <meta http-equiv="refresh" content="7; url='https://redirect.mical385.repl.co/'" />
+    <meta http-equiv="refresh" content="7; url='/'" />
   </head>
   <body>
-    <p>Redirecting you to the <a href="https://redirect.mical385.repl.co/">main page</a></p>
+    <p>Redirecting you to the <a href="/">main page</a></p>
   </body>
 </html>
