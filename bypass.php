@@ -22,7 +22,7 @@
     <br>
     <div class="d-flex justify-content-center">
       <!-- <label for="link">link: </label> -->
-      <input type="text" id="link" name="link" size="100" placeholder="url to redirect">
+      <input type="text" id="link" name="link" size="100" placeholder="Enter url here">
     </div>
 
     <div class="pt-4 d-flex justify-content-center">
