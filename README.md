@@ -2,14 +2,14 @@
  
 ## STATUS
 
-Site is now back online! Please open an issue if all mirrors does not work
+Site is now back online! Please open an issue if all mirrors does not work.
 
 ## Mirrors
 [Link 1](https://squigglysilentkey.testaccount413.repl.co/bypass)
 
 ## About this project
 
-A simple redirector hack that should work on Singapore school Ipads that have Mobile Guardian installed.
+A simple redirector hack that should work on Singapore school iPads that have Mobile Guardian installed.
 
 This is essentially a mobile guardian bypass for school ipads.
 
