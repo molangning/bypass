@@ -31,9 +31,9 @@ iPad OS 16.2.1 with mobile guardian installed on Safari
 
 ## How do I use it?
 
-Simply open one of the urls in the mirrors section
+Simply open one of the urls in the [mirrors](https://github.com/molangning/bypass#mirrors) section
 
-Bookmark this url (github and the newest mirrors) so you won't miss out on anything!
+Do remember to bookmark this github repository for the newest mirrors
 
 For self hosting, please fork this repository, import it into replit with the forked repository and set the language the PHP CLI
 
