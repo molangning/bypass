@@ -1,2 +1,5 @@
 # remove logs from committed code
 logs/
+
+# remove playground test place
+playground.php

@@ -16,19 +16,19 @@
 
   if (!in_array($_SERVER['REQUEST_METHOD'] ,['GET','HEAD'],true)) {
     error_redirect();
-    log_redirects("","Error, ". $_SERVER['REQUEST_METHOD']. " request was sent to stage-1.php.");
+    log_redirects($_SERVER['REQUEST_URI'],"Error, ". $_SERVER['REQUEST_METHOD']. " request was sent to stage-1.php.");
   }
 
   if (isset($_GET["url"]) === false) {
     error_redirect();
-    log_redirects("", "Error, url param was not set.");
+    log_redirects($_SERVER['REQUEST_URI'], "Error, url param was not set.");
   }
 
   $loc=htmlspecialchars($_GET["url"]);    
 
   if (strlen($loc)===0){
     error_redirect();
-    log_redirects($loc, "Error, url param is empty");
+    log_redirects($_SERVER['REQUEST_URI'], "Error, url param is empty");
   }
     
   if (filter_var($loc, FILTER_VALIDATE_URL) === false) {
