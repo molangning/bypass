@@ -35,7 +35,9 @@ Simply open one of the urls in the [mirrors](https://github.com/molangning/bypas
 
 Do remember to bookmark this github repository for the newest mirrors
 
-For self hosting, please fork this repository, import it into replit with the forked repository and set the language the PHP CLI
+For hosting on replit, please fork this repository, import it into replit with the forked repository and set the language the PHP CLI
+
+For self hosting or hosting on other services, please make sure that it is running Linux. I don't want to port it to windows cause it sucks.
 
 ## Bypass is restricted
 
