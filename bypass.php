@@ -1,5 +1,11 @@
+<?php
+  if (!isset($_COOKIE["uuid"])){
+    $uuid="php_".uniqid().uniqid();
+    setcookie("uuid",$uuid);
+  }
+?>
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-GB">
   <head>
     <title>redirector v2.0 - a link shortener alternative</title>
     <meta name="description" content="A alternative methord for link shortener bypasses">
@@ -15,7 +21,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   </head>
   <body class="bg-dark align-itmes-center justify-content-center">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <h1 class="text-bg-dark pt-3 text-center">The Redirector v2.0</h1>
     <h2 class="text-bg-dark pb-3 text-center">Solver for websites you want to visit!</h2>
     <br>
@@ -26,6 +31,10 @@
       <button id="button" type="button" class="btn btn-light" onclick="newTab()">Open Tab</button>
     </div>
     <script>
+      if (getCookie("timezone") === "") {
+        var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone
+        document.cookie = "timezone="+timezone+";path=/";
+      }
       var input = document.getElementById("link");
       input.addEventListener("keypress", function(event) {
         if (event.key === "Enter") {
@@ -40,7 +49,10 @@
     </p>
     <div class="text-bg-dark text-center">
       <p> 
-        Bookmark this link and the github link to check for updates. <br>SITE MAY GET BLACKLISTED SO CHECK GITHUB FOR UPDATES<br>
+        Bookmark this link and the github link to check for updates. <br>SITE MAY GET BLACKLISTED SO CHECK GITHUB FOR UPDATES. <br>
+      </p>
+      <p>
+        We need more usage data and users for this project so please share this to your friends.<br>
       </p>
       <p>
         Please open an issue at the <a href="https://github.com/molangning/bypass" class="text" target="_blank">github</a> repository to report bugs or submit suggestions.<br>
@@ -56,15 +68,15 @@
       -->
     <div class="list-group list-group w-25 m-auto p-10">
     <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center list-group-item" onclick="openUrl('https://discord.com/app')">
-      <img src="/images/discord-ico.png" style="width: auto; height: 20px; margin: 3px 10px 0px 0px;">
+      <img src="/images/discord-ico.png" style="width: auto; height: 30px; margin: 0px 10px 0px 0px;">
       Discord
     </button>
     <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center list-group-item" onclick="openUrl('https://www.instagram.com')">
-      <img src="/images/instagram.png" style="width: auto; height: 25px; margin: 3px 3px 0px 0px;">
+      <img src="/images/instagram.png" style="width: auto; height: 25px; margin: 3px 10px 0px 0px;">
       Instagram
     </button>
     <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center list-group-item" onclick="openUrl('https://web.whatsapp.com')">
-    <img src="/images/whatsapp-ico.png" style="width: auto; height: 30px; margin: 0px 5px 5px 0px">
+    <img src="/images/whatsapp-ico.png" style="width: auto; height: 25px; margin: 0px 5px 5px 0px">
       Whatsapp
     </button>
     <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center list-group-item" onclick="openUrl('https://poki.com')">
