@@ -3,44 +3,61 @@
     echo '<!DOCTYPE HTML><html><head><title>redirector v1.0 </title><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" sizes="16x16" href="/favicon/16x16.png"><link rel="icon" sizes="32x32" href="/favicon/32x32.png"><link rel="icon" sizes="192x192" href="/favicon/192x192.png"><link rel="icon" sizes="512x512" href="/favicon/512x512.png"><link rel="icon" href="/favicon/favivon.ico"><title>redirecting</title><meta http-equiv="refresh" content="3; url='."'/'".'" /></head><body><p>Redirecting you back to the <a href="/">main page</a></p></body></html>';
   }
 
-  function log_redirects($loc, $redirect_status){
-    if (!file_exists("./logs/info")){
-      mkdir("./logs/info",0700,true);
-    }
+  function log_redirects($loc, $redirect_status,$status){
+    $uuid=$_COOKIE["uuid"];
+    $timezone=$_COOKIE["timezone"];
+    
     $log="Timestamp: ".date("\S\G\T h:i:s A").PHP_EOL.
       "Requested link: ".$loc.PHP_EOL.
+      "Request type: ".$_SERVER['REQUEST_METHOD'].PHP_EOL.
       "Status: ".$redirect_status.PHP_EOL.
       "-------------------------------------------".PHP_EOL;
-    file_put_contents('./logs/info/log_'.date("o-m-d").'.log', $log, FILE_APPEND);
-    die();
+    
+   if ($status===False){
+      if (!file_exists("./logs/info")){
+        mkdir("./logs/info",0700,true);
+      }
+      file_put_contents('./logs/info/log_'.date("o-m-d").'.log', $log, FILE_APPEND);
+      die();
+    }else{
+     if (!file_exists("./logs/error")){
+        mkdir("./logs/error",0700,true);
+      }
+      file_put_contents('./logs/error/log_'.date("o-m-d").'.log', $log, FILE_APPEND);
+      die();
+    }
   }
 
   date_default_timezone_set('Asia/Singapore');
 
-  if (!in_array($_SERVER['REQUEST_METHOD'] ,['GET','HEAD'],true)) {
+  if (!in_array($_SERVER['REQUEST_METHOD'], ['GET','HEAD'],true)) {
     error_redirect();
     log_redirects($_SERVER['REQUEST_URI'],"Error, ". $_SERVER['REQUEST_METHOD']. " request was sent to stage-1.php.");
   }
 
   if (isset($_GET["url"]) === false) {
-    error_redirect();
-    log_redirects($_SERVER['REQUEST_URI'], "Error, url param was not set.");
+    if (!in_array($_SERVER['REQUEST_METHOD'], ['GET','HEAD'],true)) {
+      error_redirect();
+      log_redirects($_SERVER['REQUEST_URI'], "Error, url param was not set.",true);
+    }
   }
 
   $loc=htmlspecialchars($_GET["url"]);    
 
-  if (strlen($loc)===0){
+  if (strlen($loc===0)){
     error_redirect();
-    log_redirects($_SERVER['REQUEST_URI'], "Error, url param is empty");
+    log_redirects($_SERVER['REQUEST_URI'], "Error, url param is empty",true);
   }
     
   if (filter_var($loc, FILTER_VALIDATE_URL) === false) {
+    if ($_SERVER['REQUEST_METHOD'] === "HEAD"){
+      die();
+    }
     error_redirect();
-    log_redirects($loc, "Error, invalid url.");
+    log_redirects($loc, "Error, invalid url.",true);
   }
       
   header("Cache-Control: no-cache, must-revalidate");
   header('Location: '.$loc,true,301);
-  log_redirects($loc, "Successful redirect.");
-
+  log_redirects($loc, "Successful redirect.",false);
 ?>
