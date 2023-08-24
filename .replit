@@ -1,4 +1,4 @@
-run = "php -S 0.0.0.0:8000 -t ."
+run = "PHPRC=./php.ini php -S 0.0.0.0:8000 -t ."
 
 entrypoint = "index.php"
 
@@ -6,4 +6,4 @@ entrypoint = "index.php"
 channel = "stable-22_11"
 
 [deployment]
-run = ["sh", "-c", "php -S 0.0.0.0:8000 -t ."]
+run = ["sh", "-c", "PHPRC=./php.ini php -S 0.0.0.0:8000 -t ."]
