@@ -4,7 +4,6 @@
     <title>redirector v2.0 - a link shortener alternative</title>
     <meta name="description" content="A alternative methord for link shortener bypasses">
     <meta name=”robots” content="index, follow">
-    
     <script src="/js/index.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,67 +15,62 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   </head>
   <body class="bg-dark align-itmes-center justify-content-center">
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <h1 class="text-bg-dark pt-3 text-center">The Redirector v2.0</h1>
     <h2 class="text-bg-dark pb-3 text-center">Solver for websites you want to visit!</h2>
     <br>
     <div class="d-flex justify-content-center">
-      <!-- <label for="link">link: </label> -->
       <input type="text" id="link" name="link" size="100" placeholder="Enter url here">
     </div>
-
     <div class="pt-4 d-flex justify-content-center">
-<button id="button" type="button" class="btn btn-light" onclick="newTab()">Open Tab</button>
+      <button id="button" type="button" class="btn btn-light" onclick="newTab()">Open Tab</button>
     </div>
-<script>
-  var input = document.getElementById("link");
-
-  input.addEventListener("keypress", function(event) {
-
-  if (event.key === "Enter") {
-
-    event.preventDefault();
-    document.getElementById("button").click();
-  }
-yy990,</script>
-  <div class="text-bg-dark pt-4 text-center">
+    <script>
+      var input = document.getElementById("link");
+      input.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          document.getElementById("button").click();
+        }
+      })
+    </script>
+      <div class="text-bg-dark pt-4 text-center">
     <p id="">
       <b>ATTENTION</b>
     </p>
+    <div class="text-bg-dark text-center">
+      <p> 
+        Bookmark this link and the github link to check for updates. <br>SITE MAY GET BLACKLISTED SO CHECK GITHUB FOR UPDATES<br>
+      </p>
+      <p>
+        Please open an issue at the <a href="https://github.com/molangning/bypass" class="text" target="_blank">github</a> repository to report bugs or submit suggestions.<br>
+        Remember to star the GitHub repository if you found it helpful!
+      </p>
+    </div>
+    <div class="text-bg-dark text-center">
+      <p>
+        Quick links:
+      </p>
+    </div>
+    <!-- https://mdbootstrap.com/docs/standard/components/list-group/#
+      -->
+    <div class="list-group list-group w-25 m-auto p-10">
+    <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center list-group-item" onclick="openUrl('https://discord.com/app')">
+      <img src="/images/discord-ico.png" style="width: auto; height: 20px; margin: 3px 10px 0px 0px;">
+      Discord
+    </button>
+    <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center list-group-item" onclick="openUrl('https://www.instagram.com')">
+      <img src="/images/instagram.png" style="width: auto; height: 25px; margin: 3px 3px 0px 0px;">
+      Instagram
+    </button>
+    <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center list-group-item" onclick="openUrl('https://web.whatsapp.com')">
+    <img src="/images/whatsapp-ico.png" style="width: auto; height: 30px; margin: 0px 5px 5px 0px">
+      Whatsapp
+    </button>
+    <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center list-group-item" onclick="openUrl('https://poki.com')">
+    <img src="/images/pokigames-ico.png" style="width: auto; height: 30px; margin: 0px 5px 5px 0px">
+      Poki games
+    </button>
   </div>
-  <div class="text-bg-dark text-center">
-    <p> 
-      Bookmark this link and the github link to check for updates. <br>SITE MAY GET BLACKLISTED SO CHECK GITHUB FOR UPDATES<br>
-    </p>
-    <p>
-      Please open an issue at the <a href="https://github.com/molangning/bypass" class="text" target="_blank">github</a> repository to report bugs or submit suggestions.<br>
-      Remember to star the GitHub repository if you found it helpful!
-    </p>
-  </div>
-  <div class="text-bg-dark text-center">
-    <p>
-      Quick links:
-    </p>
-  </div>
-  <!-- https://mdbootstrap.com/docs/standard/components/list-group/#
-    -->
-  <div class="list-group list-group w-25 m-auto p-10">
-  <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center list-group-item" onclick="openUrl('https://discord.com/app')">
-    <img src="/images/discord-ico.png" style="width: auto; height: 20px; margin: 3px 10px 0px 0px;">
-    Discord
-  </button>
-  <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center list-group-item" onclick="openUrl('https://www.instagram.com')">
-    <img src="/images/instagram.png" style="width: auto; height: 25px; margin: 3px 3px 0px 0px;">
-    Instagram
-  </button>
-  <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center list-group-item" onclick="openUrl('https://web.whatsapp.com')">
-  <img src="/images/whatsapp-ico.png" style="width: auto; height: 30px; margin: 0px 5px 5px 0px">
-    Whatsapp
-  </button>
-  <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center list-group-item" onclick="openUrl('https://poki.com')">
-  <img src="/images/pokigames-ico.png" style="width: auto; height: 30px; margin: 0px 5px 5px 0px">
-    Poki games
-  </button>
-</div>
   </body>
 </html>

@@ -4,11 +4,14 @@
   }
 
   function log_redirects($loc, $redirect_status){
+    if (!file_exists("./logs/info")){
+      mkdir("./logs/info",0700,true);
+    }
     $log="Timestamp: ".date("\S\G\T h:i:s A").PHP_EOL.
       "Requested link: ".$loc.PHP_EOL.
       "Status: ".$redirect_status.PHP_EOL.
       "-------------------------------------------".PHP_EOL;
-    file_put_contents('./logs/log_'.date("o-m-d").'.log', $log, FILE_APPEND);
+    file_put_contents('./logs/info/log_'.date("o-m-d").'.log', $log, FILE_APPEND);
     die();
   }
 
