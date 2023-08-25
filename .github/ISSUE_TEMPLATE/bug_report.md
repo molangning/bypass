@@ -7,6 +7,9 @@ assignees: molangning
 
 ---
 
+**Debug details**
+Go to /bypass and paste the content here.
+
 **Describe the bug**
 A clear and concise description of what the bug is.
 
@@ -35,4 +38,4 @@ If applicable, add screenshots to help explain your problem.
  - Version [e.g. 22]
 
 **Additional context**
-- Details about which school you are from if website is restricted
+- Details about which school you are from if website is restricted.
