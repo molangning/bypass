@@ -1,16 +1,36 @@
 <?php
+  require("common_functions.php");
   function error_redirect(){
     echo '<!DOCTYPE HTML><html><head><title>redirector v1.0 </title><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" sizes="16x16" href="/favicon/16x16.png"><link rel="icon" sizes="32x32" href="/favicon/32x32.png"><link rel="icon" sizes="192x192" href="/favicon/192x192.png"><link rel="icon" sizes="512x512" href="/favicon/512x512.png"><link rel="icon" href="/favicon/favivon.ico"><title>redirecting</title><meta http-equiv="refresh" content="3; url='."'/'".'" /></head><body><p>Redirecting you back to the <a href="/">main page</a></p></body></html>';
   }
 
-  function log_redirects($loc, $redirect_status,$status){
+  function log_redirects($loc, $redirect_status, $status) {
+    date_default_timezone_set('Asia/Singapore');
+    
     $uuid=$_COOKIE["uuid"];
     $timezone=$_COOKIE["timezone"];
+    $country_code="";
+    if (!in_array($timezone, timezone_identifiers_list(),true)) {
+      $timezone="N/A";
+      $country_code="N/A";
+    } else {
+      $country_code=timezone_location_get(timezone_open($timezone))["country_code"];
+    }
+
+    if (strlen($uuid) !== 37){
+      $uuid="N/A";
+    } else if (!str_starts_with($uuid, "uuid_")){
+      $uuid="N/A";
+    }
+    
     
     $log="Timestamp: ".date("\S\G\T h:i:s A").PHP_EOL.
       "Requested link: ".$loc.PHP_EOL.
       "Request type: ".$_SERVER['REQUEST_METHOD'].PHP_EOL.
       "Status: ".$redirect_status.PHP_EOL.
+      "UUID: ".$uuid.PHP_EOL.
+      "Timezone: ".$timezone.PHP_EOL.
+      "Country code: ".$country_code.PHP_EOL.
       "-------------------------------------------".PHP_EOL;
     
    if ($status===False){
@@ -19,7 +39,7 @@
       }
       file_put_contents('./logs/info/log_'.date("o-m-d").'.log', $log, FILE_APPEND);
       die();
-    }else{
+    } else {
      if (!file_exists("./logs/error")){
         mkdir("./logs/error",0700,true);
       }
@@ -28,7 +48,7 @@
     }
   }
 
-  date_default_timezone_set('Asia/Singapore');
+
 
   if (!in_array($_SERVER['REQUEST_METHOD'], ['GET','HEAD'],true)) {
     error_redirect();
