@@ -1,14 +1,11 @@
 <?php
-  if (!isset($_COOKIE["uuid"])){
-    $uuid="php_".uniqid().uniqid();
-    setcookie("uuid",$uuid);
-  }
+  require("common_functions.php");
 ?>
 <!DOCTYPE html>
 <html lang="en-GB">
   <head>
     <title>redirector v2.0 - a link shortener alternative</title>
-    <meta name="description" content="A alternative methord for link shortener bypasses">
+    <meta name="description" content="A alternative method for link shortener bypasses">
     <meta name=”robots” content="index, follow">
     <script src="/js/index.js"></script>
     <meta charset="utf-8">
