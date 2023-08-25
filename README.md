@@ -1,4 +1,8 @@
 # Bypass project
+
+## Help needed
+
+As this project is very easy to block, we need to write detailed instructions for self deployment so it's possible to get around the block. Please open an issue with the subject "Deployment instructions". You will need to take a video recording throughout the deployment process.
  
 ## STATUS
 
