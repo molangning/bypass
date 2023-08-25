@@ -17,7 +17,7 @@
     <link rel="icon" href="/favicon/favivon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   </head>
-  <body class="bg-dark align-itmes-center justify-content-center">
+  <body class="bg-dark align-itmes-center">
     <h1 class="text-bg-dark pt-3 text-center">The Redirector v2.0</h1>
     <h2 class="text-bg-dark pb-3 text-center">Solver for websites you want to visit!</h2>
     <br>
@@ -30,7 +30,7 @@
     <script>
       if (getCookie("timezone") === "") {
         var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone
-        document.cookie = "timezone="+timezone+";path=/";
+        document.cookie = "timezone=" + timezone + ";path=/";
       }
       var input = document.getElementById("link");
       input.addEventListener("keypress", function(event) {
@@ -40,46 +40,35 @@
         }
       })
     </script>
-      <div class="text-bg-dark pt-4 text-center">
-    <p id="">
-      <b>ATTENTION</b>
-    </p>
-    <div class="text-bg-dark text-center">
-      <p> 
-        Bookmark this link and the github link to check for updates. <br>SITE MAY GET BLACKLISTED SO CHECK GITHUB FOR UPDATES. <br>
+    <div class="text-bg-dark pt-4 text-center">
+      <p id="">
+        <b>ATTENTION</b>
       </p>
-      <p>
-        We need more usage data and users for this project so please share this to your friends.<br>
-      </p>
-      <p>
-        Please open an issue at the <a href="https://github.com/molangning/bypass" class="text" target="_blank">github</a> repository to report bugs or submit suggestions.<br>
-        Remember to star the GitHub repository if you found it helpful!
-      </p>
-    </div>
-    <div class="text-bg-dark text-center">
-      <p>
-        Quick links:
-      </p>
-    </div>
-    <!-- https://mdbootstrap.com/docs/standard/components/list-group/#
+      <div class="text-bg-dark text-center">
+        <p> Bookmark this link and the github link to check for updates. <br>SITE MAY GET BLACKLISTED SO CHECK GITHUB FOR UPDATES. <br>
+        </p>
+        <p> We need more usage data and users for this project so please share this to your friends. <br>
+        </p>
+        <p> Please open an issue at the <a href="https://github.com/molangning/bypass" class="text" target="_blank">github</a> repository to report bugs or submit suggestions. <br> Remember to star the GitHub repository if you found it helpful! </p>
+      </div>
+      <div class="text-bg-dark text-center">
+        <p> Quick links: </p>
+      </div>
+      <!-- https://mdbootstrap.com/docs/standard/components/list-group/#
       -->
-    <div class="list-group list-group w-25 m-auto p-10">
-    <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center list-group-item" onclick="openUrl('https://discord.com/app')">
-      <img src="/images/discord-ico.png" style="width: auto; height: 30px; margin: 0px 10px 0px 0px;">
-      Discord
-    </button>
-    <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center list-group-item" onclick="openUrl('https://www.instagram.com')">
-      <img src="/images/instagram.png" style="width: auto; height: 25px; margin: 3px 10px 0px 0px;">
-      Instagram
-    </button>
-    <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center list-group-item" onclick="openUrl('https://web.whatsapp.com')">
-    <img src="/images/whatsapp-ico.png" style="width: auto; height: 25px; margin: 0px 5px 5px 0px">
-      Whatsapp
-    </button>
-    <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center list-group-item" onclick="openUrl('https://poki.com')">
-    <img src="/images/pokigames-ico.png" style="width: auto; height: 30px; margin: 0px 5px 5px 0px">
-      Poki games
-    </button>
-  </div>
+      <div class="list-group list-group w-25 m-auto p-10">
+        
+        <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center list-group-item" onclick="openUrl('https://discord.com/app')">
+          <img src="/images/discord-ico.png" style="width: auto; height: 30px; margin: 0px 10px 0px 0px;"> Discord </button>
+        
+        <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center list-group-item" onclick="openUrl('https://www.instagram.com')">
+          <img src="/images/instagram.png" style="width: auto; height: 25px; margin: 3px 10px 0px 0px;"> Instagram </button>
+        
+        <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center list-group-item" onclick="openUrl('https://web.whatsapp.com')">
+          <img src="/images/whatsapp-ico.png" style="width: auto; height: 25px; margin: 0px 5px 5px 0px"> Whatsapp </button>
+        
+        <button type="button" class="list-group-item list-group-item-action px-3 border-0 d-flex justify-content-center list-group-item" onclick="openUrl('https://poki.com')">
+          <img src="/images/pokigames-ico.png" style="width: auto; height: 30px; margin: 0px 5px 5px 0px"> Poki games </button>
+      </div>
   </body>
 </html>
