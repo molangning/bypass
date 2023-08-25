@@ -1,5 +1,7 @@
-# remove logs from committed code
-logs/
+# remove logs from committed code, but preserve folder structure
+logs/error/*
+logs/info/*
+logs/php/*
 
 # remove playground test place
 playground.php
