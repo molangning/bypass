@@ -7,11 +7,15 @@
     setcookie("uuid",$uuid);
   }
 
-  $uuid=$_COOKIE["uuid"];
+
 
   if (!isset($uuid)){
     set_uuid();
-  } else if (strlen($uuid) !== 37){
+  }
+
+  $uuid=$_COOKIE["uuid"];
+
+  if (strlen($uuid) !== 37){
     set_uuid();
   } else if (!str_starts_with($uuid, "uuid_")){
     set_uuid();
