@@ -12,5 +12,9 @@ switch ($request) {
     case '/bypass':
         require __DIR__ . '/bypass.php';
         break;
+  
+    case '/debug':
+        require __DIR__ . '/debug.php';
+        break;
 }
 ?>
