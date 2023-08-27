@@ -16,5 +16,9 @@ switch ($request) {
     case '/debug':
         require __DIR__ . '/debug.php';
         break;
+  case '/stage-1.php':
+        require __DIR__ . '/stage-1.php';
+        break;
+  default:
 }
 ?>
