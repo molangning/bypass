@@ -9,9 +9,15 @@ As this project is very easy to block, we need to write detailed instructions fo
 Site is now back online! Please open an issue if all mirrors does not work.
 
 ## Mirrors
-[Link 1(Semi-working)](https://squigglysilentkey.testaccount413.repl.co/bypass)
+<details open>
+ <summary>Replit mirrors</summary>
+   <a href="https://squigglysilentkey.testaccount413.repl.co/bypass">Link 1</a>
+   <a href="http://easyaciddrive.testaccount413.repl.co/bypass">Link 2</a>
+   <a href="http://fluffysnowkitten.testaccount413.repl.co/bypass">Link 3</a>
+   <a href="http://testwebsite.testaccount413.repl.co/bypass">Link 4</a>
+   <a href="http://hangeddesertedserver.testaccount413.repl.co/bypass">Link 4</a>
+</details>
 
-[Link 2](https://bounce.dsfsadfsdafds.repl.co/)
 ## Help this project
 
 We need more usage data and users for this project so please share this to your friends.
