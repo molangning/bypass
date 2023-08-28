@@ -19,6 +19,10 @@ switch ($request) {
   case '/stage-1.php':
         require __DIR__ . '/stage-1.php';
         break;
+  case '/setcookies.php':
+        require __DIR__ . '/setcookies.php';
+        break;
   default:
+        require __DIR__. '/error.php';
 }
 ?>
