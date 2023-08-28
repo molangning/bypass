@@ -1,7 +1,14 @@
 <?php
+if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
+  die();
+}
   require("common_functions.php");
   function error_redirect(){
     echo '<!DOCTYPE HTML><html><head><title>redirector v1.0 </title><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" sizes="16x16" href="/favicon/16x16.png"><link rel="icon" sizes="32x32" href="/favicon/32x32.png"><link rel="icon" sizes="192x192" href="/favicon/192x192.png"><link rel="icon" sizes="512x512" href="/favicon/512x512.png"><link rel="icon" href="/favicon/favivon.ico"><title>redirecting</title><meta http-equiv="refresh" content="3; url='."'/'".'" /></head><body><p>Redirecting you back to the <a href="/">main page</a></p></body></html>';
+  }
+
+function error_redirect(){
+    echo '<!DOCTYPE HTML><html><head><title>redirector v1.0 </title><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" sizes="16x16" href="/favicon/16x16.png"><link rel="icon" sizes="32x32" href="/favicon/32x32.png"><link rel="icon" sizes="192x192" href="/favicon/192x192.png"><link rel="icon" sizes="512x512" href="/favicon/512x512.png"><link rel="icon" href="/favicon/favivon.ico"><title>redirecting</title><meta http-equiv="refresh" content="10; url='."'/'".'" /></head><body><p>We have detected that you are a bot, please enable javascript and cookies to continue. Redirecting you back to the <a href="/">main page</a></p></body></html>';
   }
 
   function log_redirects($loc, $redirect_status, $status) {
@@ -49,10 +56,10 @@
   }
 
   if (!isset($_COOKIE["uuid"]) or !isset($_COOKIE["timezone"])){
-      error_page();      log_redirects($_SERVER['REQUEST_URI'],"Error, cookies were not set",true);
+      error_redirect();      log_redirects($_SERVER['REQUEST_URI'],"Error, cookies were not set",true);
   }
 
-  if (!in_array($_SERVER['REQUEST_METHOD'], ['GET','HEAD'],true)) {
+  if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
     error_redirect();
     log_redirects($_SERVER['REQUEST_URI'],"Error, ". $_SERVER['REQUEST_METHOD']. " request was sent to stage-1.php.",true);
   }
