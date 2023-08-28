@@ -9,6 +9,7 @@ assignees: molangning
 
 **Debug details**
 Go to /bypass and paste the content here.
+Paste the mirror you used here.
 
 **Describe the bug**
 A clear and concise description of what the bug is.
