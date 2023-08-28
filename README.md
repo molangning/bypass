@@ -11,11 +11,11 @@ Site is now back online! Please open an issue if all mirrors does not work.
 ## Mirrors
 <details open>
  <summary>Replit mirrors</summary>
-   <a href="https://squigglysilentkey.testaccount413.repl.co/bypass">Link 1</a>
-   <a href="http://easyaciddrive.testaccount413.repl.co/bypass">Link 2</a>
-   <a href="http://fluffysnowkitten.testaccount413.repl.co/bypass">Link 3</a>
-   <a href="http://testwebsite.testaccount413.repl.co/bypass">Link 4</a>
-   <a href="http://hangeddesertedserver.testaccount413.repl.co/bypass">Link 4</a>
+   <a href="https://squigglysilentkey.testaccount413.repl.co/bypass">Link 1</a><br>
+   <a href="http://easyaciddrive.testaccount413.repl.co/bypass">Link 2</a><br>
+   <a href="http://fluffysnowkitten.testaccount413.repl.co/bypass">Link 3</a><br>
+   <a href="http://testwebsite.testaccount413.repl.co/bypass">Link 4</a><br>
+   <a href="http://hangeddesertedserver.testaccount413.repl.co/bypass">Link 5</a><br>
 </details>
 
 ## Help this project
