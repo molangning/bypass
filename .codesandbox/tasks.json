@@ -6,7 +6,7 @@
   "tasks": {
     "start": {
       "name": "start",
-      "command": "git pull && PHPRC=./php.ini php -S 0.0.0.0:8000 -t .",
+      "command": "./run.sh",
       "runAtStart": true,
       "preview": {
         "port": 8080
