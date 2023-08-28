@@ -1,7 +1,8 @@
 <?php
-  require("common_functions.php");
+  require "common_functions.php";
 ?>
 <!DOCTYPE html>
+
 <html lang="en-GB">
   <head>
     <title>redirector v2.0 - a link shortener alternative</title>
