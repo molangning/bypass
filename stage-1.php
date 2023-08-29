@@ -13,10 +13,19 @@ function error_page(){
 
   function log_redirects($loc, $redirect_status, $status) {
     date_default_timezone_set('Asia/Singapore');
-    
-    $uuid=$_COOKIE["uuid"];
-    $timezone=$_COOKIE["timezone"];
-    $country_code="";
+
+    if (!isset($_COOKIE["uuid"])){
+      $uuid="N/A";
+    } else {
+      $uuid=$_COOKIE["uuid"];
+    }
+            
+    if (!isset($_COOKIE["timezone"])){
+      $timezone="N/A";
+    } else {
+      $timezone=$_COOKIE["timezone"];
+    }
+        $country_code="";
     if (!in_array($timezone, timezone_identifiers_list(),true)) {
       $timezone="N/A";
       $country_code="N/A";
