@@ -20,8 +20,10 @@
   </head>
   <body class="bg-dark align-itmes-center">
     <h1 class="text-bg-dark pt-3 text-center">The Redirector v2.0</h1>
-    <h2 class="text-bg-dark pb-3 text-center">Solver for websites you want to visit!</h2>
-    <br>
+    <h2 class="text-bg-dark pb-1 text-center">Solver for websites you want to visit!</h2>
+    <div class="text-bg-dark text-center">
+      <p>Google redirect links now work<br>(https://www.google.com.sg/url?.....&url=.....)</p>
+    </div>
     <div class="d-flex justify-content-center">
       <input type="text" id="link" name="link" size="100" placeholder="Enter url here">
     </div>
@@ -47,8 +49,6 @@
       </p>
       <div class="text-bg-dark text-center">
         <p> Bookmark this link and the github link to check for updates. <br>SITE MAY GET BLACKLISTED SO CHECK GITHUB FOR UPDATES. <br>
-        </p>
-        <p> We need more usage data and users for this project so please share this to your friends. <br>
         </p>
         <p> Please open an issue at the <a href="https://github.com/molangning/bypass" class="text" target="_blank">github</a> repository to report bugs or submit suggestions. <br> Remember to star the GitHub repository if you found it helpful! </p>
       </div>

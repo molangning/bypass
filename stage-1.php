@@ -2,7 +2,9 @@
 if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
   die();
 }
-  require("common_functions.php");
+  require "common_functions.php";
+  require "parse_urls.php";
+
   function error_redirect(){
     echo '<!DOCTYPE HTML><html><head><title>redirector v1.0 </title><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" sizes="16x16" href="/favicon/16x16.png"><link rel="icon" sizes="32x32" href="/favicon/32x32.png"><link rel="icon" sizes="192x192" href="/favicon/192x192.png"><link rel="icon" sizes="512x512" href="/favicon/512x512.png"><link rel="icon" href="/favicon/favivon.ico"><title>redirecting</title><meta http-equiv="refresh" content="3; url='."'/'".'" /></head><body><p>Redirecting you back to the <a href="/">main page</a></p></body></html>';
   }
@@ -65,7 +67,8 @@ function error_page(){
   }
 
   if (!isset($_COOKIE["uuid"]) or !isset($_COOKIE["timezone"])){
-      error_redirect();      log_redirects($_SERVER['REQUEST_URI'],"Error, cookies were not set",true);
+    error_redirect();      
+    log_redirects($_SERVER['REQUEST_URI'],"Error, cookies were not set",true);
   }
 
   if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
@@ -76,25 +79,23 @@ function error_page(){
   if (isset($_GET["url"]) === false) {
     if (!in_array($_SERVER['REQUEST_METHOD'], ['GET','HEAD'],true)) {
       error_redirect();
-      log_redirects($_SERVER['REQUEST_URI'], "Error, url param was not set.",true);
+      log_redirects($_SERVER['REQUEST_URI'], "Error, url param was not set.", true);
     }
-  }
+  }    
 
-  $loc=htmlspecialchars($_GET["url"]);    
-
-  if (strlen($loc===0)){
+  if (strlen($_GET["url"])===0){
     error_redirect();
-    log_redirects($_SERVER['REQUEST_URI'], "Error, url param is empty",true);
+    log_redirects($_SERVER['REQUEST_URI'], "Error, url param is empty", true);
   }
-    
-  if (filter_var($loc, FILTER_VALIDATE_URL) === false) {
+
+  if (filter_var($_GET["url"], FILTER_VALIDATE_URL) === false) {
     if ($_SERVER['REQUEST_METHOD'] === "HEAD"){
       die();
     }
     error_redirect();
-    log_redirects($loc, "Error, invalid url.",true);
+    log_redirects($_GET["url"], "Error, invalid url.",true);
   }
-      
+  $loc=parse_redirect_urls($_GET["url"]);
   header("Cache-Control: no-cache, must-revalidate");
   header('Location: '.$loc,true,301);
   log_redirects($loc, "Successful redirect.",false);
