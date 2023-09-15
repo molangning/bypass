@@ -8,7 +8,7 @@ assignees: molangning
 ---
 
 **Debug details**
-Go to /bypass and paste the content here.
+Go to /debug and paste the content here.
 Paste the mirror you used here.
 
 **Describe the bug**
