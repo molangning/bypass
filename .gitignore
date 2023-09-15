@@ -1,2 +1,5 @@
 # remove playground test place
 playground.php
+
+# remove test file
+set_invalid_cookie.php
