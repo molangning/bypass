@@ -26,9 +26,7 @@ We need more usage data and users for this project so please share this to your 
 
 A simple redirector hack that should work on Singapore school iPads that have Mobile Guardian installed.
 
-This is essentially a mobile guardian bypass for school ipads.
-
-THIS WILL ONLY WORK IF THE IPAD SHOWS RESTRICTED ERROR MESSAGE ON THE WEBSITE YOU ARE TRYING TO VISIT.
+This redirector will not bypass fortiguard blocks as it does not work by blocking url accesses, but by blocking connections to the website itself.
 
 Examples of the bypass in work
 
@@ -52,7 +50,7 @@ Do remember to bookmark this github repository for the newest mirrors
 
 For hosting on replit, please fork this repository, import it into replit with the forked repository and set the language the PHP CLI
 
-For self hosting or hosting on other services, please make sure that it is running Linux. I don't want to port it to windows cause it sucks.
+For self hosting, run run.sh in your favourite shell. Currently Linux is supported, but Windows can be used too (with a bit of modifications.)
 
 ## Bypass is restricted
 
