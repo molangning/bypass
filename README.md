@@ -40,7 +40,7 @@ Simply open one of the urls in the [mirrors](https://github.com/molangning/bypas
 
 Do remember to bookmark this github repository for the newest mirrors
 
-For hosting on replit, follow these instructions: ![Self hosting on Replit](https://github.com/molangning/bypass/wiki/Self-hosting-on-replit)
+For hosting on replit, follow these instructions: [Self hosting on Replit](https://github.com/molangning/bypass/wiki/Self-hosting-on-replit)
 
 For self hosting, run run.sh in your favourite shell. Currently Linux is supported, but Windows can be used too (with a bit of modifications.)
 
