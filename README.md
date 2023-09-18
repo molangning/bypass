@@ -1,13 +1,5 @@
 # Bypass project
 
-## Help needed
-
-As this project is very easy to block, we need to write detailed instructions for self deployment so it's possible to get around the block. Please open an issue with the subject "Deployment instructions". You will need to take a video recording throughout the deployment process.
- 
-## STATUS
-
-Site is now back online! Please open an issue if all mirrors does not work.
-
 ## Mirrors
 <details open>
  <summary>Replit mirrors</summary>
@@ -48,13 +40,13 @@ Simply open one of the urls in the [mirrors](https://github.com/molangning/bypas
 
 Do remember to bookmark this github repository for the newest mirrors
 
-For hosting on replit, please fork this repository, import it into replit with the forked repository and set the language the PHP CLI
+For hosting on replit, follow these instructions: [Self hosting on Replit](https://github.com/molangning/bypass/wiki/Self-hosting-on-replit)
 
 For self hosting, run run.sh in your favourite shell. Currently Linux is supported, but Windows can be used too (with a bit of modifications.)
 
 ## Bypass is restricted
 
-Please open a issue with a screenshot of the resticted page and the name of your school, as the block may just be for your school or countrywide.
+Please try all the mirrors first, then hosting on replit. If the issues still persists, open a issue with a screenshot of the resticted page and the name of your school, as the block may just be for your school or countrywide.
 
 ## I have found problems in the code/website or I want to suggest something.
 
