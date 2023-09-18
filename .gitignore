@@ -1,2 +1,6 @@
 # remove playground test place
 playground.php
+
+# remove .setup_done flag
+.setup_done
+
