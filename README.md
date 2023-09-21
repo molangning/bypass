@@ -8,6 +8,12 @@
    <a href="http://fluffysnowkitten.testaccount413.repl.co/bypass">Link 3 (updated 28/8/2023)</a><br>
    <a href="http://testwebsite.testaccount413.repl.co/bypass">Link 4 (updated 28/8/2023)</a><br>
    <a href="http://hangeddesertedserver.testaccount413.repl.co/bypass">Link 5 (updated 28/8/2023)</a><br>
+   <a href="https://oilyproductivetypes--bdaajfjais.repl.co/bypass">Link 5 (updated 28/8/2023)</a><br>
+   <a href="https://remotelimitedtrials--bdaajfjais.repl.co/bypass">Link 6 (updated 21/9/2023)</a><br>
+   <a href="https://hollowautomaticrhombus--bdaajfjais.repl.co/bypass">Link 7 (updated 21/9/2023)</a><br>
+   <a href="https://immaterialdemandingmemory--bdaajfjais.repl.co/bypass">Link 8 (updated 21/9/2023)</a><br>
+   <a href="https://smoggyselfassuredrobodoc--bdaajfjais.repl.co/bypass">Link 9 (updated 21/9/2023)</a><br>
+   <a href="https://infamousroyalsigns--bdaajfjais.repl.co/bypass">Link 10 (updated 21/9/2023)</a><br>
 </details>
 
 ## Help this project
