@@ -22,6 +22,11 @@
 
 To gain access to private mirrors, get the link from someone you know or send a message to me at emailproxy1423[AT]duck(DoT)com.
 
+### Self hosted mirrors
+
+Self hosting can be done, but the intstructions may be unclear. If it's too unclear just open a new issue and I can try and help you.
+Found a new platform to host the platform? Do share it with me through the email if you can.
+
 ## Help this project
 
 We need more usage data and users for this project so please share this to your friends.
