@@ -1,6 +1,8 @@
 # Bypass project
 
 ## Mirrors
+### Public mirrors
+
 <details open>
  <summary>Replit mirrors</summary>
    <a href="https://squigglysilentkey.testaccount413.repl.co/bypass">Link 1 (updated 28/8/2023)</a><br>
@@ -15,6 +17,15 @@
    <a href="https://smoggyselfassuredrobodoc--bdaajfjais.repl.co/bypass">Link 9 (updated 21/9/2023)</a><br>
    <a href="https://infamousroyalsigns--bdaajfjais.repl.co/bypass">Link 10 (updated 21/9/2023)</a><br>
 </details>
+
+### Private mirrors
+
+To gain access to private mirrors, get the link from someone you know or send a message to me at emailproxy1423[AT]duck(DoT)com.
+
+### Self hosted mirrors
+
+Self hosting can be done, but the intstructions may be unclear. If it's too unclear just open a new issue and I can try and help you.
+Found a new platform to host the platform? Do share it with me through the email if you can.
 
 ## Help this project
 
