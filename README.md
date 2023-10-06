@@ -1,7 +1,7 @@
 # Bypass project
 
 ## Mirrors
-Public mirrors
+### Public mirrors
 
 <details open>
  <summary>Replit mirrors</summary>
@@ -18,7 +18,7 @@ Public mirrors
    <a href="https://infamousroyalsigns--bdaajfjais.repl.co/bypass">Link 10 (updated 21/9/2023)</a><br>
 </details>
 
-Private mirrors
+### Private mirrors
 
 To gain access to private mirrors, get the link from someone you know or send a message to me at emailproxy1423[AT]duck(DoT)com.
 
