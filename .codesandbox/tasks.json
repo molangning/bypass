@@ -6,7 +6,7 @@
   "tasks": {
     "start": {
       "name": "start",
-      "command": "./run.sh",
+      "command": "./.codesandbox/run.sh",
       "runAtStart": true,
       "preview": {
         "port": 8080
