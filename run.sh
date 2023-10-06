@@ -28,20 +28,20 @@ function confirm() {
   read -r -p "$1 $q_string: " response
   case "$response" in
   
-    [yY][eE][sS]|[yY]) 
-      true
-      ;;
-          
-    [nN][oO]|[nN])
-      false
-      ;;
-      
     "")
       if [$default == "y"]; then
         true
       else
         false
       fi
+      ;;
+      
+    [yY][eE][sS]|[yY]) 
+      true
+      ;;
+          
+    [nN][oO]|[nN])
+      false
       ;;
       
     *)

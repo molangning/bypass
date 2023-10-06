@@ -3,7 +3,7 @@
 {
   "name": "PHP",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "image": "mcr.microsoft.com/devcontainers/php:1-8.2-bullseye",
+  "image": "mcr.microsoft.com/devcontainers/php:dev-8.0-apache-bullseye",
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
       "nodeGypDependencies": true,

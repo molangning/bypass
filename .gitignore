@@ -4,3 +4,6 @@ playground.php
 # remove .setup_done flag
 .setup_done
 
+# remove test.sh
+test.sh
+
