@@ -4,7 +4,6 @@
 
 export PHPRC=./php.ini 
 
-git checkout main
 if [ ! -f "./logs/php/php-error.log" ]; then
   touch ./logs/php/php-error.log
 fi
