@@ -1,4 +1,4 @@
-run = "./run.sh"
+run = "./silent-run.sh"
 
 entrypoint = "index.php"
 
