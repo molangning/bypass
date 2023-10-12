@@ -23,6 +23,7 @@
     <h2 class="text-bg-dark pb-1 text-center">Solver for websites you want to visit!</h2>
     <div class="text-bg-dark text-center">
       <p>Google redirect links now work<br>(https://www.google.com.sg/url?.....&url=.....)</p>
+      <p>Join my discord server <a href="https://discord.com/invite/wC92JBb834">here</a></p>
     </div>
     <div class="d-flex justify-content-center">
       <input type="text" id="link" name="link" size="100" placeholder="Enter url here">
