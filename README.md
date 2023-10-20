@@ -1,6 +1,6 @@
 # Bypass project
 
-## Discord server>
+## Discord server
 https://discord.com/invite/wC92JBb834
 
 ## Mirrors
