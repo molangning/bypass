@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
   require "parse_urls.php";
 
   function error_redirect(){
-    echo '<!DOCTYPE HTML><html><head><title>redirector v1.0 </title><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" sizes="16x16" href="/favicon/16x16.png"><link rel="icon" sizes="32x32" href="/favicon/32x32.png"><link rel="icon" sizes="192x192" href="/favicon/192x192.png"><link rel="icon" sizes="512x512" href="/favicon/512x512.png"><link rel="icon" href="/favicon/favivon.ico"><title>redirecting</title><script>var timezone=Intl.DateTimeFormat().resolvedOptions().timeZone;document.cookie="timezone="+timezone+";path=/";window.location.replace(window.location.href);</script></head><body><p>Setting cookies...</p></body></html>';
+    echo '<!DOCTYPE HTML><html><head><title>redirector v1.0 </title><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" sizes="16x16" href="/favicon/16x16.png"><link rel="icon" sizes="32x32" href="/favicon/32x32.png"><link rel="icon" sizes="192x192" href="/favicon/192x192.png"><link rel="icon" sizes="512x512" href="/favicon/512x512.png"><link rel="icon" href="/favicon/favivon.ico"><title>redirecting</title><script>var timezone=Intl.DateTimeFormat().resolvedOptions().timeZone;document.cookie="timezone="+timezone+";path=/";window.location.assign(window.location.href);</script></head><body><p>Setting cookies...</p></body></html>';
   }
 
 function error_page(){
