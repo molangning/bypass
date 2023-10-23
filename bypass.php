@@ -25,11 +25,12 @@
       <p>Google redirect links now work<br>(https://www.google.com.sg/url?.....&url=.....)</p>
       <p>Join my discord server <a href="https://discord.com/invite/wC92JBb834">here</a></p>
     </div>
-    <div class="d-flex justify-content-center">
+    <div class="d-flex px-4 justify-content-center">
       <input type="text" id="link" name="link" size="100" placeholder="Enter url here">
     </div>
-    <div class="pt-4 d-flex justify-content-center">
-      <button id="button" type="button" class="btn btn-light" onclick="newTab()">Open Tab</button>
+    <div class="pt-4 d-flex justify-content-center">      
+      <button id="createPermalink" type="button" class="mx-4 btn btn-light" onclick="createPermalink()">Create permalink</button>
+      <button id="openNewTab" type="button" class="btn btn-light" onclick="newTab()">Open Tab</button>
     </div>
     <script>
       if (getCookie("timezone") === "") {
@@ -40,7 +41,7 @@
       input.addEventListener("keypress", function(event) {
         if (event.key === "Enter") {
           event.preventDefault();
-          document.getElementById("button").click();
+          document.getElementById("openNewTab").click();
         }
       })
     </script>
