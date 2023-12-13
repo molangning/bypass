@@ -66,6 +66,14 @@ function error_page(){
     }
   }
 
+  if (isset($_GET["url"])){ 
+    $url=$_GET["url"];
+    $param_name="url";
+  } else if (isset($_GET["si"])){
+    $url=base64_decode($_GET["si"]);
+    $param_name="si";
+  }
+  
   if (!isset($_COOKIE["uuid"]) or !isset($_COOKIE["timezone"])){
     error_redirect();      
     log_redirects($_SERVER['REQUEST_URI'],"Error, cookies were not set",true);
@@ -76,27 +84,27 @@ function error_page(){
     log_redirects($_SERVER['REQUEST_URI'],"Error, ". $_SERVER['REQUEST_METHOD']. " request was sent to stage-1.php.",true);
   }
 
-  if (isset($_GET["url"]) === false) {
+  if (isset($url) === false) {
     if (!in_array($_SERVER['REQUEST_METHOD'], ['GET','HEAD'],true)) {
       error_redirect();
-      log_redirects($_SERVER['REQUEST_URI'], "Error, url param was not set.", true);
+      log_redirects($_SERVER['REQUEST_URI'], "Error, ". $param_name ." param was not set.", true);
     }
   }    
 
-  if (strlen($_GET["url"])===0){
+  if (strlen($url)===0){
     error_redirect();
-    log_redirects($_SERVER['REQUEST_URI'], "Error, url param is empty", true);
+    log_redirects($_SERVER['REQUEST_URI'], "Error, ". $param_name ." url param is empty", true);
   }
 
-  if (filter_var($_GET["url"], FILTER_VALIDATE_URL) === false) {
+  if (filter_var($url, FILTER_VALIDATE_URL) === false) {
     if ($_SERVER['REQUEST_METHOD'] === "HEAD"){
       die();
     }
     error_redirect();
-    log_redirects($_GET["url"], "Error, invalid url.",true);
+    log_redirects($url, "Error, invalid url.",true);
   }
-  $loc=parse_redirect_urls($_GET["url"]);
+  $loc=parse_redirect_urls($url);
   header("Cache-Control: no-cache, must-revalidate");
   header('Location: '.$loc,true,301);
-  log_redirects($loc, "Successful redirect.",false);
+  log_redirects($loc, "Successful redirect, param method ".$param_name,false);
 ?>

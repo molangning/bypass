@@ -1,5 +1,11 @@
 # Bypass project
 
+## Features
+
+- Completely bypasses mdm blocking
+- Automatic Link extraction from Google redirect urls. (https://www.google.com/url?...&url=...)
+- Encoded redirect links to prevent static blocking
+
 ## Discord server
 https://discord.com/invite/wC92JBb834
 
@@ -32,7 +38,7 @@ Found a new platform to host the platform? Do share it with me through the email
 
 ## Help this project
 
-We need more usage data and users for this project so please share this to your friends.
+We need more usage data and users for this project so share this to your friends if you can.
 
 ## About this project
 
@@ -73,5 +79,6 @@ Please try all the mirrors first, then hosting on replit. If the issues still pe
 If you have found bugs in the code, please feel free to open a issue in the github repo.
 For suggestions, make sure you tag them as suggestions in github issues
 
-## TODO
-- [x] Hidden links to prevent automatic detection
+## Reminders
+
+Don't use this project for any illegal activites. (Replit) Logs are all public so anyone can see what you are up to. 

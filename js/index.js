@@ -13,7 +13,7 @@ function newTab() {
 
 function openUrl(link) { 
   if (link.length>0) {
-    window.open("/stage-1.php?url="+encodeURIComponent(link), "_blank");  
+    window.open("/stage-1.php?si="+btoa(link), "_blank");  
   }
 }
 
