@@ -16,7 +16,7 @@ Mirrors are all broken as of now due to replit migration to deployments.
 
 Go to [bypass-js](https://github.com/molangning/bypass-js) and use other mirrors beside replit.
 
-<details open>
+<details close>
  <summary>Replit mirrors</summary>
    <a href="https://squigglysilentkey.testaccount413.repl.co/bypass">Link 1 (updated 28/8/2023)</a><br>
    <a href="http://easyaciddrive.testaccount413.repl.co/bypass">Link 2 (updated 28/8/2023)</a><br>
