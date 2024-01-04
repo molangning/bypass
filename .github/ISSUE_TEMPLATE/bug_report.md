@@ -7,6 +7,8 @@ assignees: molangning
 
 ---
 
+<!--- If you have any general question ask it on the discord server https://discord.com/invite/wC92JBb834 --->
+
 **Debug details**
 Go to /debug and paste the content here.
 Paste the mirror you used here.
