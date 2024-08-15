@@ -1,5 +1,10 @@
 # Bypass project
 
+## THIS REPOSITORY IS NOW ARCHIVED
+As mobile guardian is removed from all ipads in singapore, 
+there is no need for this project anymore.
+There will be no more updates.
+
 ## Features
 
 - Completely bypasses mdm blocking
